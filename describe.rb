@@ -5,21 +5,21 @@
 class Describe < Formula
   desc "Command-line tool that generates Markdown documentation from a directory"
   homepage "https://github.com/rodlaf/describe"
-  version "1.0.3"
+  version "1.0.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rodlaf/describe/releases/download/v1.0.3/describe_darwin_amd64.tar.gz"
-      sha256 "9ef6c584a753e50535e2677c899db239559beb52bf21f2a4f17c8985237c925c"
+      url "https://github.com/rodlaf/describe/releases/download/v1.0.4/describe_darwin_amd64.tar.gz"
+      sha256 "e94dbe5236bf40101bd9176bccc5c3d9197865edfc4380ceef5c6850a9341182"
 
       def install
         bin.install 'describe'
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rodlaf/describe/releases/download/v1.0.3/describe_darwin_arm64.tar.gz"
-      sha256 "13480a38f882435fa6f8eacccafe30c305ab5927f63ebdbfb49abdc38f1a9749"
+      url "https://github.com/rodlaf/describe/releases/download/v1.0.4/describe_darwin_arm64.tar.gz"
+      sha256 "502c5c511f5d1f59c6be88ec4fd226e6ab899cd4b33347df1ce2ca3271f57681"
 
       def install
         bin.install 'describe'
@@ -30,8 +30,8 @@ class Describe < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/rodlaf/describe/releases/download/v1.0.3/describe_linux_amd64.tar.gz"
-        sha256 "7c915911d42be66160d97a4865bd3222fb0f8fe107eb3127336e6b61eaa08809"
+        url "https://github.com/rodlaf/describe/releases/download/v1.0.4/describe_linux_amd64.tar.gz"
+        sha256 "b626f7c6c4bc95380110bad777d0f593e2a6be6a55fbbe4cca6012c307292a76"
 
         def install
           bin.install 'describe'
@@ -40,8 +40,8 @@ class Describe < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/rodlaf/describe/releases/download/v1.0.3/describe_linux_arm64.tar.gz"
-        sha256 "6b893a1f591a805fcc6968b99b496c34ac1121447015b84a400895e3f06cb2be"
+        url "https://github.com/rodlaf/describe/releases/download/v1.0.4/describe_linux_arm64.tar.gz"
+        sha256 "c8af19e54da807388dd5105f548f0d52c39c515bd29ed58eec52d46b5d4be5dc"
 
         def install
           bin.install 'describe'
